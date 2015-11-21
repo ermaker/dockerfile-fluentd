@@ -6,6 +6,7 @@ RUN /usr/sbin/td-agent-gem install \
   fluent-plugin-docker-format \
   fluent-plugin-parser \
   fluent-plugin-record-reformer \
+  fluent-plugin-rewrite-tag-filter \
   fluent-plugin-secure-forward \
   fluent-plugin-slack
 
