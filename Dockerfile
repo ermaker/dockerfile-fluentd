@@ -3,6 +3,7 @@ MAINTAINER Minwoo Lee "ermaker@gmail.com"
 
 # Install Fluentd plug-in
 RUN /usr/sbin/td-agent-gem install \
+  fluent-plugin-color-stripper \
   fluent-plugin-docker-format \
   fluent-plugin-parser \
   fluent-plugin-record-reformer \
