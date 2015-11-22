@@ -16,7 +16,7 @@ RUN apt-get update && \
   apt-get install -y git && \
   apt-get clean
 
-RUN git clone https://github.com/ermaker/fluent-plugin-color-stripper
+RUN git clone https://github.com/ermaker/fluent-plugin-color-stripper \
   -b strip_dangling_colors && \
   cd fluent-plugin-color-stripper && \
   /usr/sbin/td-agent-gem build fluent-plugin-color-stripper.gemspec && \
