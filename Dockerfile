@@ -24,13 +24,5 @@ RUN git clone https://github.com/ermaker/fluent-plugin-color-stripper \
   cd .. && \
   rm -rf fluent-plugin-color-stripper
 
-RUN git clone https://github.com/ermaker/fluent-plugin-parser \
-  -b fix_superclass && \
-  cd fluent-plugin-parser && \
-  /usr/sbin/td-agent-gem build fluent-plugin-parser.gemspec && \
-  /usr/sbin/td-agent-gem install fluent-plugin-parser-0.6.0.gem && \
-  cd .. && \
-  rm -rf fluent-plugin-parser
-
 # Restore the entrypoint
 ENTRYPOINT ["/usr/sbin/td-agent"]
