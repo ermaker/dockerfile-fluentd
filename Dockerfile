@@ -5,6 +5,7 @@ MAINTAINER Minwoo Lee "ermaker@gmail.com"
 RUN /usr/sbin/td-agent-gem install \
   fluent-plugin-color-stripper \
   fluent-plugin-docker-format \
+  fluent-plugin-elasticsearch \
   fluent-plugin-parser \
   fluent-plugin-record-reformer \
   fluent-plugin-rewrite-tag-filter \
