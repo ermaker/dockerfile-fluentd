@@ -1,6 +1,9 @@
 FROM seapy/fluentd-es
 MAINTAINER Minwoo Lee "ermaker@gmail.com"
 
+RUN /usr/sbin/td-agent-gem uninstall \
+  fluent-plugin-elasticsearch
+
 # Install Fluentd plug-in
 RUN /usr/sbin/td-agent-gem install \
   fluent-plugin-color-stripper \
