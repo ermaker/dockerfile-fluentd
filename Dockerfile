@@ -23,7 +23,7 @@ RUN set -ex && \
     fluent-plugin-slack && \
   sudo -u fluent git clone \
     https://github.com/ermaker/fluent-plugin-color-stripper \
-    -b strip_dangling_colors && \
+    -b apply_fluentd_0_14 && \
   cd fluent-plugin-color-stripper && \
   sudo -u fluent gem build fluent-plugin-color-stripper.gemspec && \
   sudo -u fluent gem install fluent-plugin-color-stripper-0.0.3.gem && \
