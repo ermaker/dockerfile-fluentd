@@ -6,8 +6,6 @@ RUN apk add --update --virtual .build-deps \
  && sudo gem install \
         bson_ext \
         fluent-plugin-bufferize \
-        fluent-plugin-color-stripper \
-        fluent-plugin-docker-format \
         fluent-plugin-elasticsearch \
         fluent-plugin-mongo \
         fluent-plugin-out-http \
