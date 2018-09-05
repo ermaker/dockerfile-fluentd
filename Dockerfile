@@ -1,4 +1,4 @@
-FROM fluent/fluentd:onbuild
+FROM fluent/fluentd
 MAINTAINER Minwoo Lee <ermaker@gmail.com>
 
 RUN apk add --update --virtual .build-deps \
