@@ -5,6 +5,7 @@ RUN apk add --update --virtual .build-deps \
         sudo build-base ruby-dev \
  && sudo gem install \
         bson_ext \
+        fluent-plugin-beats \
         fluent-plugin-elasticsearch \
         fluent-plugin-mongo \
         fluent-plugin-out-http \
